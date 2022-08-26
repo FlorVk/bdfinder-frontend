@@ -1,0 +1,96 @@
+.btn {
+  color: white;
+  border-radius: 10px;
+  padding: 0.5em 1em;
+  margin: 1em;
+  text-align: center;
+  background-color: rgb(202, 202, 202);
+  font-size: 1em;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.btn--primary {
+  padding-left: 2em;
+  padding-right: 2em;
+  background-color: rgb(245, 204, 99);
+  font-size: 1.2em;
+  font-weight: bolder;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.form__item {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.form__text {
+  border-radius: 5px;
+  border: 1px solid rgb(245, 204, 99);
+  padding: 0.5em;
+}
+
+.form__text:focus {
+  outline: none;
+}
+
+.form__label {
+  font-weight: bold;
+  font-size: 0.9em;
+  padding-top: 1em;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 2em;
+}
+
+body {
+  background-color: rgb(202, 202, 202);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.app {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  margin: 2em 10em;
+  padding: 2em;
+  border-radius: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+.alert {
+  border-radius: 10px;
+  padding: 0.5em 2em;
+  margin: 1em;
+  text-align: center;
+  background-color: rgb(202, 202, 202);
+  font-size: 0.8em;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+}
+
+.alert--success {
+  background-color: rgb(39, 206, 106);
+}
+
+.alert--error {
+  background-color: rgb(214, 43, 43);
+}
+
+/*# sourceMappingURL=app.css.map */

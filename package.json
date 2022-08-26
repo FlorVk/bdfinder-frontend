@@ -1,0 +1,25 @@
+{
+  "name": "bdfinder-frontend",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "nodemon ./bin/www",
+    "sass": "./node_modules/.bin/sass --watch ./source/sass/app.scss:./dist/app.css"
+  },
+  "dependencies": {
+    "sass": "^1.54.5"
+  },
+  "main": "index.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FlorVk/bdfinder-frontend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FlorVk/bdfinder-frontend/issues"
+  },
+  "homepage": "https://github.com/FlorVk/bdfinder-frontend#readme",
+  "description": ""
+}

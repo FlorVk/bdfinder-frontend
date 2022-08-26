@@ -1,0 +1,24 @@
+.title {
+   font-weight: bold;
+   font-size: 2em; 
+}
+
+body {
+    background-color: $color-default;
+    font-family: $font-standard;
+}
+
+.app {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: $color-white;
+    margin: 2em 10em;
+    padding: 2em;
+    border-radius: 10px;
+}
+
+.hidden {
+    display: none;
+}
