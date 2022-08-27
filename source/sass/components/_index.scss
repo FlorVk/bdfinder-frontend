@@ -1,0 +1,14 @@
+.user__username {
+    background-color: $color-yellow;
+    margin: 0.5em;
+    padding: 0.5em 5em;
+    border-radius: 10px;
+
+}
+
+.users {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}

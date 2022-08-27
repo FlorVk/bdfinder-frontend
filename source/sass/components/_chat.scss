@@ -1,0 +1,118 @@
+body {
+    padding: 50px;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  }
+  
+  a {
+    color: #00B7FF;
+  }
+  
+  .chatbox {
+    width: 500px;
+    border: 1px solid #ccc;
+    background: #fff;
+  }
+  
+  .chatbox__header {
+    padding-inline: 32px;
+    border-bottom: 1px solid #ccc;
+    background: #f5f5f5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .chatbox__header__title {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .chatbox__header__title--aside {
+    font-weight: lighter;
+  }
+  
+  .chatbox__body {
+    padding: 10px;
+    overflow: auto;
+    height: 500px;
+  }
+  
+  .chatbox__body__chatBubble {
+    display: inline-block;
+    padding: 4px 16px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 80%;
+    word-wrap: break-word;
+    background-color: #f5f5f5;
+  }
+  
+  .chatbox__body__chatBubble__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .chatbox__body__chatBubble__header__title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    line-height: 0.5;
+  }
+  
+  .chatbox__body__chatBubble__header__title--aside {
+    font-weight: lighter;
+  }
+  
+  .chatbox__body__chatBubble__body__message {
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .chatbox__footer {
+    padding: 10px;
+    border-top: 1px solid #ccc;
+    background: #f5f5f5;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .chatbox__footer__input {
+    width: calc(100% - 20px);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .chatbox__footer__button {
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    height: 20px;
+  }
+  
+  .chatbox__footer__button:hover {
+    filter: brightness(1.5);
+  }
+  
+  .chatbox__body__chatBubble--right {
+    float: right;
+  }
+  
+  .chatbox__body__chatBubble--left {
+    float: left;
+  }
+  
+  .capitalize {
+    text-transform: capitalize;
+  }

@@ -5,10 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Birthday finder</title>
-    <link rel="stylesheet" href="css/app.css" />
+    <link rel="stylesheet" href="dist/app.css" />
   </head>
   <body>
-    
+    <nav>
+        
+    </nav>
+
+    <div class="app">
+      <h2 class="title">Users met birthday</h2>
+
+      <div class="alert alert--error hidden">
+          <span class="alert__text">Something went wrong</span>
+      </div>
+
+      <div class="users">
+        <div class="users__body" id="usersBirthday"></div>
+        <a class="btn btn--primary" href="chat.html">Chatroom</a>
+      </div>
+
+  </div>
 
     <script src="http://localhost:3000/primus/primus.js"></script>
     <script src="js/index.js">js/app.js</script>
