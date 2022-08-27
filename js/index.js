@@ -27,11 +27,3 @@ fetch(base_url + "/api/v1/bday/" + birthday, {
     console.log(err);
     console.log("Something went wrong")
 });
-
-
-// simple logout functionality
-document.querySelector(".option__logout").addEventListener("click", e => {
-    localStorage.removeItem("token");
-    window.location.href = "login.html";
-    e.preventDefault();
-});
