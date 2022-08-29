@@ -1,8 +1,5 @@
-// FRONTEND
-
 async function startup() {
     const newUser = await getUserFromCookie();
-    console.log("user", newUser);
     updateName(newUser.username);
     birthdayUser(newUser.birthday);
     birthdayURL(newUser.birthday);
@@ -23,7 +20,6 @@ async function startup() {
     const birthdayString = date.toISOString().split('T')[0];
     const birthdayTitle = document.getElementById("birthdayTitle");
     birthdayTitle.innerText = birthdayString;
-    console.log(birthdayString);
   }
 
   const base_url = "https://birthday-finder-florvk.herokuapp.com";

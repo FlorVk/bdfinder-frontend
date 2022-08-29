@@ -1,10 +1,10 @@
-body {
-    padding: 50px;
-    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  }
-  
-  a {
+a {
     color: #00B7FF;
+  }
+
+  .app__chat {
+    display: flex;
+    justify-content: center;
   }
   
   .chatbox {
@@ -23,12 +23,13 @@ body {
   }
   
   .chatbox__header__title {
-    font-size: 32px;
+    font-size: 1.8em;
     font-weight: bold;
     color: #333;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 0.7em;
   }
   
   .chatbox__header__title--aside {
@@ -38,7 +39,7 @@ body {
   .chatbox__body {
     padding: 10px;
     overflow: auto;
-    height: 500px;
+    height: 450px;
   }
   
   .chatbox__body__chatBubble {

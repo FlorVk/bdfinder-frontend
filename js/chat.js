@@ -1,3 +1,21 @@
+async function startup() {
+    const newUser = await getUserFromCookie();
+    updateName(newUser.username);
+    birthdayUser(newUser.birthday);
+    birthdayURL(newUser.birthday);
+    return newUser;
+  }
+
+  function updateName(name) {
+    const linkEl = document.getElementById("login");
+    const usernameEl = document.getElementById("username");
+
+    linkEl.classList.add("hidden");
+    usernameEl.innerText = "Logged in as " + name;
+  }
+
+  startup()
+
 let userObject = {username: 'guest'}
     async function onStart () {
         console.log('start')

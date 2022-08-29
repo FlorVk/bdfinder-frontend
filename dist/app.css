@@ -4,7 +4,7 @@
   padding: 0.5em 1em;
   margin: 1em;
   text-align: center;
-  background-color: rgb(202, 202, 202);
+  background-color: rgb(222, 222, 222);
   font-size: 1em;
   font-weight: bold;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -18,18 +18,21 @@
   font-weight: bolder;
 }
 
+.btn--secondary {
+  background-color: rgb(235, 165, 103);
+  margin-top: 0;
+}
+
 .form {
-  display: flex;
+  display: grid;
   justify-content: center;
-  flex-direction: column;
   align-items: center;
   width: 100%;
 }
 
 .form__item {
-  display: flex;
+  display: grid;
   flex-direction: column;
-  width: 50%;
 }
 
 .form__text {
@@ -54,8 +57,9 @@
 }
 
 body {
-  background-color: rgb(202, 202, 202);
+  background-color: rgb(222, 222, 222);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 25px;
 }
 
 .app {
@@ -78,7 +82,7 @@ body {
   padding: 0.5em 2em;
   margin: 1em;
   text-align: center;
-  background-color: rgb(202, 202, 202);
+  background-color: rgb(222, 222, 222);
   font-size: 0.8em;
   font-weight: bold;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -120,13 +124,17 @@ body {
   margin-right: auto;
 }
 
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+#birthdayTitle {
+  color: rgb(235, 165, 103);
 }
 
 a {
   color: #00B7FF;
+}
+
+.app__chat {
+  display: flex;
+  justify-content: center;
 }
 
 .chatbox {
@@ -145,12 +153,13 @@ a {
 }
 
 .chatbox__header__title {
-  font-size: 32px;
+  font-size: 1.8em;
   font-weight: bold;
   color: #333;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 0.7em;
 }
 
 .chatbox__header__title--aside {
@@ -160,7 +169,7 @@ a {
 .chatbox__body {
   padding: 10px;
   overflow: auto;
-  height: 500px;
+  height: 450px;
 }
 
 .chatbox__body__chatBubble {
@@ -240,7 +249,7 @@ a {
 }
 
 .user__username {
-  background-color: rgb(245, 204, 99);
+  background-color: rgb(235, 165, 103);
   margin: 0.5em;
   padding: 0.5em 5em;
   border-radius: 10px;
