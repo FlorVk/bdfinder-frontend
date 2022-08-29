@@ -2,7 +2,7 @@ async function getUserFromCookie() {
     const allCookies = getAllCookies();
     const userJWT = allCookies["jwt"];
     const userResponse = await fetch(
-      "http://localhost:3000/auth/getUser",
+      "https://birthday-finder-florvk.herokuapp.com/auth/getUser",
       {
         method: "GET",
         headers: {

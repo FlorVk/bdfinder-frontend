@@ -10,7 +10,7 @@ var btnSignup = document.querySelector(".signup__btn").addEventListener("click",
         document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
     }
 
-    fetch('http://localhost:3000/users/signup', {
+    fetch('https://birthday-finder-florvk.herokuapp.com/users/signup', {
         method: "post",
         headers: {
             'Content-Type': 'application/json'

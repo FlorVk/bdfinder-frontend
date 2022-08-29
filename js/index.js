@@ -26,7 +26,7 @@ async function startup() {
     console.log(birthdayString);
   }
 
-  const base_url = "http://localhost:3000";
+  const base_url = "https://birthday-finder-florvk.herokuapp.com";
 
 
   function birthdayURL(addition) {
@@ -35,7 +35,7 @@ async function startup() {
     const birthdayString = date.toISOString().split('T')[0];
     fetch(base_url + "/api/v1/bday/" + birthdayString, {
         'headers': {
-            'Authorization': 'Bearer ' + localStorage.getItem('token')
+            'Content-Type': 'application/json'
         }
     }).then(result => {
         return result.json();
