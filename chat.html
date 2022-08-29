@@ -11,18 +11,19 @@
     <div class="chatbox">
       <div class="chatbox__header">
         <p class="chatbox__header__title" id="user"></p>
-        <p class="chatbox__header__title--aside">11:09:23</p>
+        <p class="chatbox__header__title--aside" id="time">11:09:23</p>
       </div>
       
       <div class="chatbox__body" id="chatHistory"></div>
       <div class="chatbox__footer"> 
-        <input class="chatbox__footer__input" id="message" type="text" name="message" placeholder="Type your message here..."/><img class="chatbox__footer__button" src="https://cdn-icons-png.flaticon.com/512/3682/3682321.png" alt="alt" onclick="writeMessage()"/>
+        <input class="chatbox__footer__input" id="message" type="text" name="message" placeholder="Type your message here..."/>
+        <img class="chatbox__footer__button" src="https://cdn-icons-png.flaticon.com/512/3682/3682321.png" alt="alt" onclick="writeMessage(userObject)"/>
       </div>
     </div>
     <div></div>
     
-
-    <script src="http://localhost:3000/primus/primus.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="http://127.0.0.1:3000/primus/primus.js"></script>
     <script src="js/chat.js"></script>
   </body>
 </html>

@@ -1,13 +1,45 @@
 // FRONTEND
 
-const base_url = "http://localhost:3000";
-const birthday = "1998-11-25";
+async function startup() {
+    const newUser = await getUserFromCookie();
+    console.log("user", newUser);
+    updateName(newUser.username);
+    birthdayUser(newUser.birthday);
+    return newUser; 
+  }
+
+  function updateName(name) {
+    console.log(name);
+    const linkEl = document.getElementById("login");
+    const usernameEl = document.getElementById("username");
+
+    linkEl.classList.add("hidden");
+    usernameEl.innerText = "Logged in as " + name;
+  }
+
+  function birthdayUser(birthday){
+    const birthdayParse = birthday;
+    const date = new Date(birthdayParse);
 
 
-/* redirect if not logged in */
-if (!localStorage.getItem("token")) {
-    window.location.href = "login.html";
-}
+    const birthdayString = date.toISOString().split('T')[0];
+    console.log(birthdayParse);
+
+    const birthdayTitle = document.getElementById("birthdayTitle");
+
+    birthdayTitle.innerText = birthdayString;
+    return birthdayParse;
+  }
+
+  startup()
+
+
+  const base_url = "http://localhost:3000";
+
+  const birthday = "1998-11-25";
+  console.log(birthday);
+
+
 
 /* fetch all users on load */
 fetch(base_url + "/api/v1/bday/" + birthday, {
@@ -27,3 +59,4 @@ fetch(base_url + "/api/v1/bday/" + birthday, {
     console.log(err);
     console.log("Something went wrong")
 });
+

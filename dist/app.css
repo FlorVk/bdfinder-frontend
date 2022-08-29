@@ -93,6 +93,33 @@ body {
   background-color: rgb(214, 43, 43);
 }
 
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.navigation__link {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--color-tertiary);
+  margin-inline: 16px;
+}
+
+.navigation__link:hover {
+  color: var(--color-primary);
+}
+
+.navigation__link--right {
+  margin-left: auto;
+}
+
+.navigation__link--left {
+  margin-right: auto;
+}
+
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
