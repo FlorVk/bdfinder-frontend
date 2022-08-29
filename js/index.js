@@ -5,6 +5,7 @@ async function startup() {
     console.log("user", newUser);
     updateName(newUser.username);
     birthdayUser(newUser.birthday);
+    birthdayURL(newUser.birthday);
     return newUser;
   }
 
@@ -28,7 +29,7 @@ async function startup() {
   const base_url = "http://localhost:3000";
 
 
-  function birthdayUser(addition) {
+  function birthdayURL(addition) {
     console.log(addition);
     const date = new Date(addition);
     const birthdayString = date.toISOString().split('T')[0];
