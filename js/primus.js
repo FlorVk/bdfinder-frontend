@@ -19,9 +19,7 @@ primus.on('open', () => {
     primus.write({reason: 'syncChatRequest'})
   })
 
-  function requestSyncHistory(chatID) {
-    primus.write({ reason: "syncChatRequest", data: { chatID: chatID } });
-  }
+
 
   function writeMessage(user) {
     const message = document.getElementById('message').value
